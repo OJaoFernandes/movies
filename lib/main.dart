@@ -41,7 +41,7 @@ Future<void> _initializeDependencies() async {
       BaseOptions(
         baseUrl: 'https://api.themoviedb.org/3',
         queryParameters: {
-          'api_key': 'bf850661de2471df3599be142a33aad0',
+          'api_key': const String.fromEnvironment('TMDB_API_KEY'),
           'language': 'pt-BR',
         },
       ),
